@@ -43,13 +43,13 @@ func (j *Job) Run() *jw.Result {
 			namespace,
 			jobs.One,
 			nil,
-			datamap.DataMap{succeeded: secondStep},
+			datamap.DataMap{succeeded: datamap.DataMap{"step": secondStep}},
 		),
 		secondStep: jw.NewStep(
 			namespace,
 			jobs.Two,
 			nil,
-			datamap.DataMap{succeeded: datamap.DataMap{"step": thirdStep}},
+			datamap.DataMap{succeeded: thirdStep},
 		),
 		thirdStep: jw.NewStep(
 			namespace,
