@@ -8,7 +8,6 @@ package simpleworkflow
 
 import (
 	"github.com/mls-361/armen-sdk/jw"
-	"github.com/mls-361/datamap"
 	"github.com/mls-361/uuid"
 
 	"github.com/mls-361/armen-example/internal/job"
@@ -43,13 +42,13 @@ func (j *Job) Run() *jw.Result {
 			namespace,
 			jobs.One,
 			nil,
-			datamap.DataMap{succeeded: datamap.DataMap{"step": secondStep}},
+			map[string]interface{}{succeeded: map[string]interface{}{"step": secondStep}},
 		),
 		secondStep: jw.NewStep(
 			namespace,
 			jobs.Two,
 			nil,
-			datamap.DataMap{succeeded: thirdStep},
+			map[string]interface{}{succeeded: thirdStep},
 		),
 		thirdStep: jw.NewStep(
 			namespace,
