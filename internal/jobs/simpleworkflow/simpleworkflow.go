@@ -62,6 +62,7 @@ func (j *Job) Run() *jw.Result {
 		uuid.New(),
 		jobs.SimpleWorkflow,
 		jobs.SimpleWorkflow,
+		jobs.SimpleWorkflow,
 		jw.PriorityLow,
 		firstStep,
 		allSteps,
