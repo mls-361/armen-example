@@ -29,7 +29,7 @@ type (
 // New AFAIRE.
 func New(pluginName string, resources *resources.Resources) *MsgHandler {
 	return &MsgHandler{
-		Base:       minikit.NewBase("msghandler."+pluginName, "msghandler."+pluginName),
+		Base:       minikit.NewBase(pluginName+".msghandler", ""),
 		pluginName: pluginName,
 		cjPrefix:   fmt.Sprintf("create.job.%s.", pluginName),
 		resources:  resources,

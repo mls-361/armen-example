@@ -34,7 +34,7 @@ type (
 // New AFAIRE.
 func New(pluginName string, resources *resources.Resources) *Runner {
 	return &Runner{
-		Base:      minikit.NewBase("jw."+pluginName, "jw."+pluginName),
+		Base:      minikit.NewBase(pluginName+".runner", ""),
 		resources: resources,
 	}
 }

@@ -28,7 +28,7 @@ type (
 // New AFAIRE.
 func New(pluginName string, resources *resources.Resources) *Factory {
 	cf := &Factory{
-		Base:      minikit.NewBase("factory."+pluginName, "factory."+pluginName),
+		Base:      minikit.NewBase(pluginName+".factory", ""),
 		namespace: pluginName,
 		resources: resources,
 	}
