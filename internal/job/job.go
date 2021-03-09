@@ -8,7 +8,7 @@ package job
 
 import (
 	"github.com/mls-361/armen-sdk/jw"
-	"github.com/mls-361/armen-sdk/logger"
+	"github.com/mls-361/logger"
 
 	"github.com/mls-361/armen-example/internal/resources"
 )

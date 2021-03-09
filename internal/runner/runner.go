@@ -8,8 +8,8 @@ package runner
 
 import (
 	"github.com/mls-361/armen-sdk/jw"
-	"github.com/mls-361/armen-sdk/logger"
 	"github.com/mls-361/failure"
+	"github.com/mls-361/logger"
 	"github.com/mls-361/minikit"
 
 	_job "github.com/mls-361/armen-example/internal/job"

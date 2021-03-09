@@ -8,8 +8,8 @@ package resources
 
 import (
 	"github.com/mls-361/armen-sdk/components"
-	"github.com/mls-361/armen-sdk/logger"
 	"github.com/mls-361/armen-sdk/message"
+	"github.com/mls-361/logger"
 )
 
 type (
